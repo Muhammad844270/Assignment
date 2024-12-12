@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form>
+        
+        <h3>Personal Details</h3>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        
+        <h3>Contact Information</h3>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+        
+        
+        <h3>Preferences</h3>
+
+        Gender: 
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+
+        Hobbies: <br>
+        <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+        <label for="hobby1">Reading</label>
+
+        <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+        <label for="hobby2">Traveling</label>
+        
+        <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+        <label for="hobby3">Sports</label><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="pakistan">Pakistan</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+        </select>
+        
+        
+        <h3>Account Settings</h3>
+        <label for="profile">Upload Profile Picture:</label>
+        <input type="file" id="profile" name="profile"><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms and Conditions</label>
+        
+
+        <button type="submit">Register</button>
+        
+    </form>
+</body>
+</html>
